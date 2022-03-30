@@ -5,9 +5,9 @@ jobs:
   tweet:
     runs-on: ubuntu-latest
     steps:
-      - name: Tweet
-        id: tweet
-        uses: snow-actions/tweet@v1.1.1
+      - uses: actions/checkout@v3
+      - run: ls -l
+      - uses: snow-actions/tweet@v1.1.1
         env:
           CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           CONSUMER_API_SECRET_KEY: ${{ secrets.TWITTER_CONSUMER_API_SECRET_KEY }}
