@@ -15,7 +15,7 @@ jobs:
           ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
         with:
           status: |
-            Hot @elcanaoel tweet of the day
+            Hot #SaharaReporter news of the day
             
           media_paths: |
             shot.png
